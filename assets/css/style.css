@@ -46,18 +46,21 @@ h1 span svg {
     width: 60px;
     /* border: 1px solid #e5e5e5; */
     border-radius: 50%;
+    opacity: 0;
     animation: fadeIn 1s ease-in both;
 }
 
 .info {
     margin-left: 0.5rem;
+    opacity: 0;
     animation: fadeIn 1s ease-in both;
+    animation-delay: 100ms;
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translate3d(0, -20%, 0);
+        transform: translate3d(0, -40%, 0);
     }
 
     to {
