@@ -59,6 +59,7 @@ h1 span svg {
 
 .info {
     margin-left: 0.5rem;
+    flex: none;
 }
 
 .card.fade .info {
