@@ -32,6 +32,7 @@ h1 span svg {
     display: flex;
     width: 100vw;
     height: 100vh;
+    cursor: pointer;
 }
 
 .card {
@@ -40,18 +41,27 @@ h1 span svg {
     justify-content: center;
     height: 100%;
     width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .photo img {
     width: 60px;
     /* border: 1px solid #e5e5e5; */
     border-radius: 50%;
+}
+
+.card.fade .photo img {
     opacity: 0;
     animation: fadeIn 1s ease-in both;
 }
 
 .info {
     margin-left: 0.5rem;
+}
+
+.card.fade .info {
     opacity: 0;
     animation: fadeIn 1s ease-in both;
     animation-delay: 100ms;
@@ -67,4 +77,22 @@ h1 span svg {
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+}
+
+input {
+    height: 10px;
+    width: 50px;
+    background: red;
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#overlayCard {
+    position: fixed;
 }
