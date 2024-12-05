@@ -10,14 +10,14 @@ body {
 }
 
 h1 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     display: flex;
     align-items: center;
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     opacity: 75%;
 }
@@ -37,28 +37,33 @@ h1 span svg {
     width: 100vw;
     height: 100vh;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
 }
 
 .card {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 1);
     padding: 0.5rem;
     border-radius: 0.5rem;
+    border: 1px solid #e3e3e3;
+    /* animation-name: bounce; */
+    /* animation-timing-function: ease; */
+    /* animation-duration: 200ms; */
+    /* animation-iteration-count: infinite; */
 }
 
 .photo img {
-    width: 60px;
+    width: 42px;
     /* border: 1px solid #e5e5e5; */
     border-radius: 50%;
 }
 
 .card.fade .photo img {
     opacity: 0;
-    animation: fadeIn 1s ease-in both;
+    animation: fadeIn 200ms ease-in both;
 }
 
 .info {
@@ -68,7 +73,7 @@ h1 span svg {
 
 .card.fade .info {
     opacity: 0;
-    animation: fadeIn 1s ease-in both;
+    animation: fadeIn 200ms ease-in both;
     animation-delay: 100ms;
 }
 
@@ -101,3 +106,17 @@ input {
 #overlayCard {
     position: fixed;
 }
+
+/* @keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+} */
