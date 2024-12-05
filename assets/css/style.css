@@ -30,6 +30,8 @@ h1 span {
 
 h1 span svg {
     fill: rgba(29, 161, 242, 1);
+    width: 16px;
+    height: 16px;
 }
 
 .main {
