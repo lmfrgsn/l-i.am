@@ -26,6 +26,8 @@ h1 span {
     width: 18px;
     height: 18px;
     margin-left: 2px;
+    display: flex;
+    align-items: center;
 }
 
 h1 span svg {
